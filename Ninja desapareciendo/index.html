@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja desapareciendo</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('img').click(function(){
+                $(this).hide("slow")
+            })
+            $('#restore').click(function(){
+                $('img').show("slow")
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <img src="perro1.jpg"></img>
+            <img src="perro2.jpg"></img>
+            <img src="perro3.jpg"></img>
+            <img src="perro4.png"></img>
+            <img src="perro5.jpg"></img>
+            <img src="perro6.jfif"></img>
+            <img src="perro7.jpg"></img>
+            <img src="perro8.jfif"></img>
+        </div>
+        <button id='restore'>Restore</button>
+    </div>
+</body>
+</html>
